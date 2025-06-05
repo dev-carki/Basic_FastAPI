@@ -9,7 +9,12 @@ app = FastAPI()
 # Operation은 GET, POST, PUT/PATCH, DELETE등의 HTTP 메소드임. 
 @app.get("/")
 async def root():
-    return {"message": "Hello World"}
+    return {
+        "message": "HELLO WORLD!!"
+    }
 
-class FASD:
-    pass
+@app.get("/item")
+async def item_func():
+    return {
+        "item": "Hello Item"
+    }
